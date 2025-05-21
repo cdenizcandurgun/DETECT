@@ -1,0 +1,9 @@
+[build]
+  command = "streamlit run app.py"
+  publish = "."
+
+[build.environment]
+  PIP_DISABLE_PIP_VERSION_CHECK = "1"
+
+[context.production.environment]
+  PYTHON_VERSION = "3.10"
